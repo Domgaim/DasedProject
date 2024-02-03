@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+*{
+ box-sizing: border-box; *behavior: url(/scripts/boxsizing.htc);
+ margin: 0;
+ padding: 0;
+ font-family: 'poppins', sans-serif;
+}
+.showcase {
+  position: absolute;
+  right:0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  z-index: 2;
+}
+.showcase header {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.toggle{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url("menu.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor:  pointer;
+  color: #fff;
+  z-index: 2;
+}
+.toggle.active{
+  background: url('close.png');
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  
+}
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.overlay {
+min-height:100vh
+display: -Webkit-Box;
+display: -Ms-Flexbox;
+display: Flex;
+-Webkit-Box-Align: center;
+  -Ms-FLex-Align: center;
+    Align-Items: center;
+    -Webkit-Box-Pack: center;
+      -Ms-FLex-pack: center;
+        Justify-content: center;
+     
+
+  }
+.opening{
+  position: relative;
+  z-index: 10;
+}
+.opening h2 {
+  font-size: sem;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.opening a {
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #111;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.opening a:hover{
+  letter-spacing: 6px;
+}
+.menu-dropdown {
+  display: inline-block
+  position: relative;
+}
+.menu-content {
+  dsiplay: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.menu-dropdown:hover .menu-content {
+  display: block;
+}
+
+.menu-content {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+
+
+
+.video-container{
+position:absolute;
+top: 0;
+left: 0;
+width: 100%
+height: 100%
+overflow: hidden;
+object-fit: fill;
+
+}
+.video-container video {
+ min-width: 100%;
+ min-height: 100%;
+width: auto;
+height: auto;
+position:absolute;
+top: 50%;
+left: 50%
+transform: translate( -50%, -50%);
+  }
+  .menu-dropdown {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    
+  }
